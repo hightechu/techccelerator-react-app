@@ -98,7 +98,7 @@ After cloning the repository, we should set up a local copy of the database to b
 
 ### Step 2
 The SCRUM Master will:
-- Go to Cloud Firestore and create a database
+- Go to Cloud Firestore and create a database. Under rules, make sure it says `allow: read, write`
 - Go to authentication and enable eamil/password as a sign in method
 - Click on "add a web app" and create a new web app
 
@@ -184,7 +184,12 @@ The Techccelerator React app template comes with the following functions impleme
 - Login user (/login)
 - Add to database (/adddatasample)
 
-> _Hint:_ These functions also give you a basic outline of how to write a function and interact with the database.
+The following pages also exist:
+
+- About page (/about)
+- User homepage (/home) that is only visible when a user is logged in. This is also where the user can logout
+
+> _Hint:_ These functions and pages also give you a basic outline of how to write a function and interact with the database.
 
 ### Problems?
 
