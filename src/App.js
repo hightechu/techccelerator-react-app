@@ -20,7 +20,10 @@ function App() {
     <div className="container-fluid">
         <h1>Hello World</h1>
         <p>
-          This is the frontpage of your app. Testing.
+          This is the frontpage of your app.
+        </p>
+        <p>
+          New here? <a href="/signup">Click here to sign up!</a> Returning users can <a href="/login">login here!</a>
         </p>
     </div>
   );

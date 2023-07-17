@@ -16,6 +16,7 @@ import App from './App';
 import AddDataSample from './components/AddDataSample';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// Add routes after line 30
 root.render(
   <React.StrictMode>
     <BrowserRouter>

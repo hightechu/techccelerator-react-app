@@ -5,12 +5,13 @@ import { useNavigate } from 'react-router-dom';
  
 const UserHome = () => {
 
+    // Use this code (lines 9-18) on other pages that you only want authenticated users to see
     const currentUser = auth.currentUser;
     const navigate = useNavigate();
     useEffect(()=>{
         onAuthStateChanged(auth, (user) => {
             if (!user) {
-              // No user is logged in
+              // No user is logged in. Navigate them to the login page
               navigate("/login");
             }
           });    
@@ -18,7 +19,7 @@ const UserHome = () => {
 
     const handleLogout = () => {               
         signOut(auth).then(() => {
-            // Sign-out successful.
+            // Sign-out successful. Redirect to landing page
             navigate("/");
         }).catch((error) => {
             // An error happened.
@@ -28,6 +29,9 @@ const UserHome = () => {
     return (
         <div className="container-fluid">        
             <h1>Welcome back, {currentUser.email}</h1>
+            <p>
+                This is your user homepage. This is a good place to put their main feed.
+            </p>
             <button onClick={handleLogout}>Logout</button>
         </div>
     )
