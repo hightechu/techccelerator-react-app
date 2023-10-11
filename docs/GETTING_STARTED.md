@@ -149,6 +149,8 @@ Then, create a build of your app:
 npm run build
 ```
 
+This may take a few minutes.
+
 You'll need to login to Firebase. Run `firebase login` to get a login prompt.
 
 Initialize Firebase by running `firebase init`. You'll be prompted to do a few things: 
