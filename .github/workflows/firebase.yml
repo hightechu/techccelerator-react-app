@@ -49,4 +49,10 @@ jobs:
         with:
           args: deploy --only hosting
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          REACT_APP_apiKey: ${{ secrets.REACT_APP_APIKEY }}
+          REACT_APP_authDomain: ${{ secrets.REACT_APP_AUTHDOMAIN }}
+          REACT_APP_projectId: ${{ secrets.REACT_APP_PROJECTID }}
+          REACT_APP_storageBucket: ${{ secrets.REACT_APP_STORAGEBUCKET }}
+          REACT_APP_messagingSenderId: ${{ secrets.REACT_APP_MESSAGINGSENDERID }}
+          REACT_APP_appId: ${{ secrets.REACT_APP_APPID }}
+          REACT_APP_measurementId: ${{ secrets.REACT_APP_MEASUREMENTID }}
