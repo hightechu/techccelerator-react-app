@@ -19,9 +19,9 @@ const Login = () => {
   };
   return (
     <>
-      <div className="container-fluid">
+      <div>
        
-              <h1>Login</h1>
+              <h3>Login</h3>
               {error ? <div>{error}</div> : null}
               <form onSubmit={handleSubmit}>
                 <input
@@ -30,15 +30,15 @@ const Login = () => {
                   value={email}
                   placeholder="Email"
                   onChange={(e) => setEmail(e.target.value)}
-                />
+                /><br></br>
                 <input
                   type="password"
                   name="password"
                   value={password}
                   placeholder="Password"
                   onChange={(e) => setPassword(e.target.value)}
-                />
-                <input type="submit" value="submit" />
+                /><br></br>
+                <input type="submit" value="Submit" />
               </form>
               <br>
               </br>
