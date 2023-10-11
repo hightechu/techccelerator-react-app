@@ -27,7 +27,7 @@ function App() {
     <div className="container-fluid">
         <h1>Hello World</h1>
         <p>
-          This is the frontpage (index) of your app. It's a good place to put a greeting message and your login form, if you choose to have authenticated users.
+          This is the frontpage of your app. It's a good place to put a greeting message and your login form, if you choose to have authenticated users.
         </p>
         <Login />
     </div>
