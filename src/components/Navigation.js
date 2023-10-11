@@ -1,18 +1,27 @@
-import { Nav, Navbar, NavLink } from "react-bootstrap";
-import { Link } from "react-router-dom";
-
 const Navigation = () => {
     return (
-        <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
-            <Navbar.Toggle aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll" />
-            <Navbar.Collapse id="navbarScroll">
-                <Nav>
-                    <NavLink  eventKey="1" as={Link} to="/">My Awesome App</NavLink>
-                    <NavLink  eventKey="3" as={Link} to="/about">About</NavLink>
-                </Nav>
-            </Navbar.Collapse>     
-        </Navbar>
+        <div>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <a className="navbar-brand" href="/">My Awesome App Name</a>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav mr-auto">
+                    <li className="nav-item active">
+                        <a className="nav-link" href="/">Home</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="/about">About</a>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     );
 }
  
 export default Navigation;
+
+
