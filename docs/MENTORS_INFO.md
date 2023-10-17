@@ -48,6 +48,8 @@ Please make sure that the rest of the HTU mentors have access to the team repos.
 
 Please follow the steps outlined on the *Deployment* section of [`GETTING_STARTED.md`](GETTING_STARTED.md).
 
+> Automatic deployments is still outstanding. We recommend using the HighTechUStudent Google account to deploy the projects manually after merging into main.
+
 ## Conclusion
 
 The repository should now be ready for HighTechU Students to start developing and exploring.
