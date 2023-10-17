@@ -174,7 +174,7 @@ On your Github repo, go to *Settings > Secrets and Variables > Actions*
 
 Create a new repository secret called `FIREBASE_TOKEN`. This is cAse sEnSiTiVe! For the value, paste in the token you just copied.
 
-That's it! Now, whenever you merge into the main branch, Github will automatically build and deploy your project. This will take 3-5 minutes.
+!!! This workflow will test your code's ability to be built and deployed, but will not actually deploy your project. You will still need to manually deploy, or ask a mentor for help.
 
 > Always test code locally before pushing to your branch and making a pull request. Only HTU staff can merge your request into main.
 
